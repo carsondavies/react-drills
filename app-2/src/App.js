@@ -6,17 +6,16 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      friends: ['Carson', 'Cj', 'Harrison', 'Jared', 'Heather']
+      friends: ['harry', 'cj', 'jared', 'heather', 'calvin', 'jasmine', 'spencer']
     }
   }
 
   render() {
-    let friendsToDisplay = this.state.friends.map((element, index) => {
-      return <h2 key={index}>{element}</h2>
+    let friendsToDisplay = this.state.friends.map((e, i) => {
+      return <h2 key={i}>{e}</h2>
     })
     return <div className='App'>{friendsToDisplay}</div>
-
   }
 }
 
-export default App;
+export default App
